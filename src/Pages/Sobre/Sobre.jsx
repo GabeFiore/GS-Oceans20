@@ -1,7 +1,9 @@
 function Sobre() {
   return (
     <>
-      <h1>teste Sobre</h1>
+      <div className="sobre container mx-auto p-14">
+        <h2 className="sobre-title">Teste sobre</h2>
+      </div>
     </>
   );
 }

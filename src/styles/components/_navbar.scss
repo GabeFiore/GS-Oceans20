@@ -1,0 +1,32 @@
+@use '../mixins';
+@use '../variables';
+
+.navbar {
+    @include mixins.flex-config(row, center, center); 
+    background-color: variables.$primary-color;
+    padding: 1.5rem; 
+  
+    ul {
+      display: flex; 
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        margin-left: 1.5rem; 
+      }
+  
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.3rem;
+        transition: color 0.3s ease; 
+  
+        &:hover {
+          text-decoration: underline;
+          color: variables.$hover-color;
+        }
+      }
+    }
+  }

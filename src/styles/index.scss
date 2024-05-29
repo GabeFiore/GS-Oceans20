@@ -1,0 +1,10 @@
+@import 'base/reset';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/navbar';
+@import 'pages/home';
+@import 'pages/sobre';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

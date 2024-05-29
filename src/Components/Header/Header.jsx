@@ -4,7 +4,6 @@ function Header() {
   return (
     <>
       <header>
-        <h1>Saving Oceans</h1>
         <NavBar />
       </header>
     </>
