@@ -9,17 +9,32 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #1E3A8A;
-  padding: 1.5rem;
+  background-color: #00d4ff;
+  padding: 1.6rem;
+  justify-content: space-between;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  width: 80px;
+  border-radius: 50%;
+}
+.navbar .logo h1 {
+  font-size: 1.8rem;
+  margin-left: 1.2rem;
+  color: rgb(0, 0, 99);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .navbar ul {
   display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 .navbar ul li {
-  margin-left: 1.5rem;
+  list-style: none;
 }
 .navbar ul a {
   text-decoration: none;
@@ -29,8 +44,31 @@
   transition: color 0.3s ease;
 }
 .navbar ul a:hover {
-  text-decoration: underline;
-  color: #93C5FD;
+  color: rgb(0, 0, 150);
+}
+
+.home {
+  height: 1100px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
+}
+
+.dashboard {
+  height: 1100px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
+}
+
+.geral {
+  height: 1100px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
+}
+
+.empresarial {
+  height: 1100px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
 }
 
 @tailwind base;

@@ -4,7 +4,9 @@ import App from "./App.jsx";
 import "./styles/index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home/Home.jsx";
-import Sobre from "./Pages/Sobre/Sobre.jsx";
+import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
+import Geral from "./Pages/Geral/Geral.jsx";
+import Empresarial from "./Pages/Empresarial/Empresarial.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +14,9 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-      { path: "sobre", element: <Sobre /> },
+      { path: "dashboard", element: <Dashboard /> },
+      { path: "geral", element: <Geral /> },
+      { path: "empresarial", element: <Empresarial /> },
     ],
   },
 ]);

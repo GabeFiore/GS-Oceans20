@@ -3,17 +3,33 @@
 
 .navbar {
     @include mixins.flex-config(row, center, center); 
-    background-color: variables.$primary-color;
-    padding: 1.5rem; 
+    background-color: #00d4ff;
+    padding: 1.6rem; 
+    justify-content: space-between;
+
+    .logo{
+      display: flex;
+      align-items: center;
+      img{
+        width: 80px;
+        border-radius: 50%;
+      }
+      h1{
+        font-size: 1.8rem;
+        margin-left: 1.2rem;
+        color: rgb(0, 0, 99);
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
   
     ul {
       display: flex; 
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+      flex-wrap: wrap;
+      gap: 3rem;
   
       li {
-        margin-left: 1.5rem; 
+        list-style: none;
       }
   
       a {
@@ -24,8 +40,7 @@
         transition: color 0.3s ease; 
   
         &:hover {
-          text-decoration: underline;
-          color: variables.$hover-color;
+          color: rgb(0, 0, 150);
         }
       }
     }
