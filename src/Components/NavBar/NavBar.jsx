@@ -23,6 +23,10 @@ function NavBar() {
           <li>
             <Link to="empresarial">Sustentabilidade Corporativa</Link>
           </li>
+
+          <li>
+            <Link to="login">Entrar </Link>
+          </li>
         </ul>
       </nav>
     </>

@@ -7,6 +7,7 @@ import Home from "./Pages/Home/Home.jsx";
 import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import Geral from "./Pages/Geral/Geral.jsx";
 import Empresarial from "./Pages/Empresarial/Empresarial.jsx";
+import Login from "./Pages/login/login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "dashboard", element: <Dashboard /> },
       { path: "geral", element: <Geral /> },
       { path: "empresarial", element: <Empresarial /> },
+      { path: "Login", element: <Login /> },
     ],
   },
 ]);
