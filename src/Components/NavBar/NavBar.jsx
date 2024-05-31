@@ -8,7 +8,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="logo">
           <img src={Logo} alt="Logo" />
-          <h1>Oceans Project</h1>
+          <h1>OceanGuard</h1>
         </div>
         <ul>
           <li>

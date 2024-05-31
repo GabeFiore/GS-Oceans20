@@ -24,8 +24,7 @@
 .navbar .logo h1 {
   font-size: 1.8rem;
   margin-left: 1.2rem;
-  color: rgb(0, 0, 99);
-  text-transform: uppercase;
+  color: #1b199e;
   font-weight: bold;
 }
 .navbar ul {
@@ -44,7 +43,7 @@
   transition: color 0.3s ease;
 }
 .navbar ul a:hover {
-  color: rgb(0, 0, 150);
+  color: #1b199e;
 }
 
 .home {
