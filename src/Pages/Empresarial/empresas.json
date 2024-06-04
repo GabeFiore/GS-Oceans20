@@ -1,0 +1,66 @@
+[
+    {
+      "bgColor": "bg-green-200",
+      "borderColor": "border-green-300",
+      "textColor": "text-indigo-900",
+      "text": "Patagonia",
+      "strongText": "Uso de materiais reciclados e doações ambientais",
+      "description": "Patagonia utiliza materiais reciclados em muitos de seus produtos e doa 1% de suas vendas anuais para apoiar organizações ambientais.",
+      "points": "1200 pontos"
+    },
+    {
+      "bgColor": "bg-blue-200",
+      "borderColor": "border-blue-300",
+      "textColor": "text-indigo-900",
+      "text": "Unilever",
+      "strongText": "Plano de Vida Sustentável",
+      "description": "Unilever estabeleceu metas para reduzir a pegada ambiental de seus produtos, melhorar a saúde e bem-estar de mais de um bilhão de pessoas e melhorar as condições de vida de milhões de pessoas em sua cadeia de fornecimento.",
+      "points": "1100 pontos"
+    },
+    {
+      "bgColor": "bg-yellow-200",
+      "borderColor": "border-yellow-300",
+      "textColor": "text-indigo-900",
+      "text": "IKEA",
+      "strongText": "Investimento em energias renováveis",
+      "description": "IKEA está investindo pesadamente em energias renováveis, com o objetivo de se tornar uma empresa de impacto climático positivo até 2030. Eles também promovem a economia circular através de programas de reciclagem de móveis.",
+      "points": "1300 pontos"
+    },
+    {
+      "bgColor": "bg-red-200",
+      "borderColor": "border-red-300",
+      "textColor": "text-indigo-900",
+      "text": "Tesla",
+      "strongText": "Veículos elétricos e soluções de energia limpa",
+      "description": "Tesla está na vanguarda da transição para uma mobilidade mais sustentável com seus veículos elétricos e também desenvolve soluções de energia limpa, como painéis solares e sistemas de armazenamento de energia.",
+      "points": "1400 pontos"
+    },
+    {
+      "bgColor": "bg-orange-200",
+      "borderColor": "border-orange-300",
+      "textColor": "text-indigo-900",
+      "text": "Interface",
+      "strongText": "Mission Zero para eliminar impacto ambiental",
+      "description": "Interface se comprometeu a eliminar qualquer impacto negativo no meio ambiente até 2020 através de seu projeto 'Mission Zero', reduzindo emissões de carbono e usando materiais reciclados.",
+      "points": "1000 pontos"
+    },
+    {
+      "bgColor": "bg-purple-200",
+      "borderColor": "border-purple-300",
+      "textColor": "text-indigo-900",
+      "text": "Google",
+      "strongText": "Compra de energia renovável",
+      "description": "Google compra grandes quantidades de energia renovável para alimentar seus data centers e escritórios, além de investir em projetos de eficiência energética e tecnologias de energia limpa.",
+      "points": "1500 pontos"
+    },
+    {
+      "bgColor": "bg-pink-200",
+      "borderColor": "border-pink-300",
+      "textColor": "text-indigo-900",
+      "text": "Nestlé",
+      "strongText": "Iniciativas de sustentabilidade",
+      "description": "Nestlé lançou várias iniciativas para promover a sustentabilidade, incluindo esforços para reduzir o uso de água, melhorar a eficiência energética e promover práticas agrícolas sustentáveis entre seus fornecedores.",
+      "points": "1100 pontos"
+    }
+  ]
+  
