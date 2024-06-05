@@ -45,6 +45,70 @@
 .navbar ul a:hover {
   color: #1b199e;
 }
+@media (max-width: 1216px) {
+  .navbar {
+    display: block;
+  }
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+  .navbar .logo {
+    justify-content: center;
+  }
+  .navbar .logo img {
+    width: 60px;
+  }
+  .navbar .logo h1 {
+    font-size: 1.5rem;
+    margin-left: 0.8rem;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .navbar ul a {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem;
+  }
+  .navbar .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .logo img {
+    width: 50px;
+  }
+  .navbar .logo h1 {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .navbar ul {
+    gap: 1.5rem;
+  }
+  .navbar ul a {
+    font-size: 1rem;
+  }
+}
 
 .home {
   padding: 2rem;
@@ -123,6 +187,9 @@
   }
   .home .info {
     width: 100%;
+  }
+  .home .info h2 {
+    font-size: 1.2rem;
   }
   .home .info .overview {
     gap: 2rem;
