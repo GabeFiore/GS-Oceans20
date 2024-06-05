@@ -47,9 +47,112 @@
 }
 
 .home {
-  height: 1100px;
+  padding: 2rem;
   background: rgb(2, 0, 36);
   background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.4rem;
+  margin: 0 auto;
+}
+.home .container .intro {
+  width: 460px;
+}
+.home .container .intro .title {
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.home .container .intro p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+  text-align: justify;
+}
+.home .container .carrosel {
+  width: 700px;
+  height: 320px;
+}
+.home .info {
+  width: 90%;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+.home .info h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  text-align: center;
+}
+.home .info .overview {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.home .info .overview img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+}
+.home .info .overview .texto {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+}
+.home .info .overview .texto .paragrafos p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #fff;
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .home .container {
+    flex-direction: column;
+  }
+  .home .container .carrosel {
+    width: 420px;
+    height: 320px;
+  }
+  .home .info {
+    width: 100%;
+  }
+  .home .info .overview {
+    gap: 2rem;
+  }
+  .home .info .overview img {
+    max-width: 80%;
+  }
+  .home .info .overview .texto {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .home .container {
+    flex-direction: column;
+  }
+  .home .container .intro {
+    max-width: 250px;
+  }
+  .home .container .carrosel {
+    width: 250px;
+    height: 120px;
+  }
+  .home .info {
+    width: 90%;
+  }
+  .home .info .overview img {
+    max-width: 250px;
+  }
 }
 
 .dashboard {

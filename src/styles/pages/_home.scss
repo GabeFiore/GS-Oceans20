@@ -2,7 +2,135 @@
 @use '../variables';
 
 .home {
-    height: 1100px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 17, 121, 1) 43%, rgba(0, 212, 255, 1) 98%);
-}
+  padding: 2rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 17, 121, 1) 43%, rgba(0, 212, 255, 1) 98%);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.4rem;
+    margin: 0 auto;
+
+    .intro {
+      width: 460px;
+
+      .title {
+        font-size: 1.6rem;
+        color: black;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #fff; 
+        text-align: justify;
+      }
+    }
+
+    .carrosel {
+      width: 700px;
+      height: 320px;
+    }
+  }
+
+  .info {
+    width: 90%;
+    padding: 2rem 0;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .overview {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4rem;
+
+      img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 8px;
+      }
+
+      .texto {
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+
+        .paragrafos {
+          p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color:#fff;
+            text-align: justify;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: column;
+
+          .carrosel {
+              width: 420px;
+              height: 320px;
+          }
+      }
+
+      .info {
+          width: 100%;
+
+          .overview {
+              gap: 2rem;
+
+              img {
+                  max-width: 80%;
+              }
+
+              .texto {
+                  max-width: 100%;
+                  flex-direction: column;
+                  align-items: center;
+              }
+          }
+      }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+
+        .intro{
+            max-width: 250px;
+        }
+
+        .carrosel {
+            width: 250px;
+            height: 120px;
+        }
+    }
+
+      .info {
+          width: 90%;
+          .overview {
+              img {
+                  max-width: 250px;
+              }
+          }
+      }
+  }
+  }
