@@ -229,9 +229,164 @@
 }
 
 .geral {
-  height: 1100px;
+  padding: 2rem;
   background: rgb(2, 0, 36);
   background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
+}
+.geral .container-intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.geral .container-intro .intro {
+  max-width: 40%;
+}
+.geral .container-intro .intro h2 {
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.geral .container-intro .intro p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+  text-align: justify;
+}
+.geral .container-intro .imagem img {
+  width: 580px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.geral .impactos {
+  margin: 0 auto;
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid black;
+  border-radius: 8px;
+  max-width: 80%;
+  padding: 2rem;
+}
+.geral .impactos h2 {
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.geral .impactos p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: black;
+  text-align: justify;
+}
+.geral .impactos ul {
+  margin-top: 1rem;
+}
+.geral .impactos ul li {
+  margin-bottom: 1rem;
+}
+.geral article {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.geral article .video {
+  padding: 2rem;
+}
+.geral article .video span {
+  display: block;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+}
+.geral article .video iframe {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+}
+.geral article .video .infograficos {
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+.geral article .video .infograficos h2 {
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.geral article .video .infograficos p {
+  font-size: 1.1rem;
+  color: black;
+}
+.geral article .video .infograficos a {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+.geral article .video .infograficos a:hover {
+  text-decoration: underline;
+}
+.geral article .guia-acoes {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid black;
+  border-radius: 8px;
+  max-width: 40%;
+  padding: 2rem;
+}
+.geral article .guia-acoes h2 {
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.geral article .guia-acoes p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: black;
+  text-align: justify;
+}
+.geral article .guia-acoes ul {
+  margin-top: 1rem;
+}
+.geral article .guia-acoes ul li {
+  margin-bottom: 1rem;
+}
+.geral article .guia-acoes ul li ul a {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+@media (max-width: 1100px) {
+  .geral .container-intro .imagem {
+    margin-bottom: 2rem;
+  }
+  .geral .container-intro .intro {
+    max-width: 80%;
+  }
+  .geral article {
+    flex-wrap: wrap;
+  }
+  .geral article .guia-acoes {
+    max-width: 80%;
+    margin-top: -2rem;
+  }
 }
 
 .empresarial {
