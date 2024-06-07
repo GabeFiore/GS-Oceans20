@@ -6,7 +6,7 @@ function Footer() {
           Juntos podemos salvar os oceanos
         </p>
         <p className="text-sm">
-          © Todos os direitos reservados. Plataforma Oceans20 - 2024
+          © Todos os direitos reservados. Plataforma OceanGuard - 2024
         </p>
       </div>
     </footer>
