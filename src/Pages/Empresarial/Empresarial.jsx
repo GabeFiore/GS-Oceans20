@@ -5,24 +5,20 @@ function Empresarial() {
   const [empresas, setEmpresas] = useState([]);
 
   useEffect(() => {
-    // Carregar os dados das empresas do arquivo JSON
     setEmpresas(empresasData);
   }, []);
 
   return (
-    <div className="dashboard min-h-screen">
-      <main className="pt-24 px-10 pb-4">
+    <div className="dashboard min-h-screen bg-gradient-to-b from-blue-900 to-blue-400">
+      <main className="pt-4 px-6 lg:px-10 pb-4">
         <div className="text-center mb-10">
-          <h2 className="text-4xl tracking-tight font-bold text-primary-800">
+          <h2 className="text-4xl tracking-tight font-bold text-white">
             Leis de Sustentabilidade no Brasil para Empresas
           </h2>
         </div>
 
-        <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
+        <div className="max-w-screen-xl mx-auto py-8 px-4 lg:py-6 lg:px-6">
           <div className="flex flex-col md:flex-row">
-            <div className="mr-0 md:mr-8 mb-6 md:mb-0">
-           </div>
-
             <div className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
               <LeiCard
                 nome="Política Nacional de Resíduos Sólidos (Lei nº 12.305/2010)"
@@ -52,15 +48,18 @@ function Empresarial() {
           </div>
         </div>
 
-        <div className="text-center mb-10">
-          <h2 className="text-4xl tracking-tight font-bold text-primary-800">
+        <div className="text-center mb-10 mt-10">
+          <h2 className="text-4xl tracking-tight font-bold text-white">
             Empresas Sustentáveis
           </h2>
         </div>
 
         <div className="flex flex-wrap -mx-2">
           {empresas.map((empresa, index) => (
-            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+            <div
+              key={index}
+              className="w-full sm:w-1/2 lg:w-1/3 p-2 text-white"
+            >
               <Card
                 bgColor={empresa.bgColor}
                 borderColor={empresa.borderColor}
@@ -88,7 +87,7 @@ const Card = ({
   points,
 }) => (
   <div
-    className={`bg-no-repeat ${bgColor} ${borderColor} border rounded-xl p-6 w-full`}
+    className={`bg-no-repeat ${bgColor} ${borderColor} border rounded-xl p-6 w-full transition-transform transform hover:scale-105`}
   >
     <p className={`text-3xl ${textColor}`}>
       {text} <br />
@@ -102,10 +101,10 @@ const Card = ({
 );
 
 const LeiCard = ({ nome, descricao }) => (
-  <div className="w-full sm:w-1/2 mb-4 px-2">
-    <div className="h-full py-4 px-6 border border-t-white-500 border-t-0 border-l-0 rounded-br-xl">
-      <h3 className="text-2xl font-bold text-md mb-6">{nome}</h3>
-      <p className="text-sm">{descricao}</p>
+  <div className="w-full sm:w-1/2 lg:w-1/3 mb-4 px-2">
+    <div className="h-full py-4 px-6 border border-gray-300 bg-white rounded-xl shadow-md transition-transform transform hover:scale-105">
+      <h3 className="text-2xl font-bold text-gray-800 mb-6">{nome}</h3>
+      <p className="text-sm text-gray-600">{descricao}</p>
     </div>
   </div>
 );

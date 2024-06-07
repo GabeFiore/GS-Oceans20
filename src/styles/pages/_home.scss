@@ -2,31 +2,22 @@
 @use '../variables';
 
 .home {
-  padding: 2rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 17, 121, 1) 43%, rgba(0, 212, 255, 1) 98%);
+  @include mixins.inicial-config;
 
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include mixins.flex-space-evenly;
     gap: 1.4rem;
-    margin: 0 auto;
+    margin: variables.$margin-center;
 
     .intro {
       width: 460px;
 
       .title {
-        font-size: 1.6rem;
-        color: black;
-        margin-bottom: 0.5rem;
+        @include mixins.title-style;
       }
 
       p {
-        font-size: 1.2rem;
-        line-height: 1.5;
-        color: #fff; 
-        text-align: justify;
+        @include mixins.paragraph-style;
       }
     }
 
@@ -39,28 +30,26 @@
   .info {
     width: 90%;
     padding: 2rem 0;
-    margin: 0 auto;
+    margin: variables.$margin-center;
 
     h2 {
         font-size: 1.6rem;
         margin-bottom: 2rem;
-        color: black;
+        color: variables.$color-black;
         background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 4px;
+        border-radius: variables.$border-radius-small;
         text-align: center;
     }
 
     .overview {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
+      @include mixins.flex-config(row, center, flex-start);
       flex-wrap: wrap;
       gap: 4rem;
 
       img {
         width: 100%;
         max-width: 350px;
-        border-radius: 8px;
+        border-radius: variables.$border-radius-medium;
       }
 
       .texto {
@@ -72,7 +61,7 @@
           p {
             font-size: 1.2rem;
             line-height: 1.8;
-            color:#fff;
+            color: variables.$color-white;
             text-align: justify;
             margin-bottom: 3rem;
           }

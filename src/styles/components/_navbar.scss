@@ -33,13 +33,13 @@
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: variables.$color-white;
       font-weight: bold;
       font-size: 1.3rem;
       transition: color 0.3s ease; 
 
       &:hover {
-        color: #1b199e;
+        color: variables.$hover-color;
       }
     }
   }

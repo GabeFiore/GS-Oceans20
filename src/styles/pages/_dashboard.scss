@@ -2,10 +2,7 @@
 @use '../variables';
 
 .dashboard {
-  padding: 2rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 17, 121, 1) 43%, rgba(0, 212, 255, 1) 98%);
-
+  @include mixins.inicial-config;
 
   .header {
     text-align: center;
@@ -13,29 +10,28 @@
 
     h1 {
       font-size: 2rem;
-      color: black;
+      color: variables.$color-black;
       margin-bottom: 0.5rem;
     }
 
     p {
       max-width: 700px;
-      margin: 0 auto;
+      margin: variables.$margin-center;
       font-size: 1.2rem;
-      color: #fff;
+      color: variables.$color-white;
     }
   }
 
   .graficos,
   .grafico-mapa {
-    display: flex;
+    @include mixins.flex-config('',space-around,'');
     flex-wrap: wrap;
-    justify-content: space-around;
     margin-bottom: 2rem;
 
     img {
       max-width: 400px;
       margin: 5px;
-      border-radius: 8px;
+      border-radius: variables.$border-radius-medium;
     }
   }
 
@@ -46,7 +42,7 @@
       max-width: 700px;
       height: 250px;
       margin: 5px;
-      border-radius: 8px;
+      border-radius: variables.$border-radius-medium;
     }
   }
 
@@ -54,7 +50,7 @@
     margin-top: 2rem;
 
     .mapa {
-      margin: 0 auto;
+      margin: variables.$margin-center;
       max-width: 900px;
     }
   }

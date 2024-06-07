@@ -1,6 +1,37 @@
+@mixin inicial-config {
+    padding: 2rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 17, 121, 1) 43%, rgba(0, 212, 255, 1) 98%);
+}
+
 @mixin flex-config($flex-d, $jc, $ai) {
     display: flex;
     flex-direction: $flex-d;
     justify-content: $jc;
     align-items: $ai;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-space-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@mixin title-style {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+@mixin paragraph-style {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff; 
+    text-align: justify;
 }

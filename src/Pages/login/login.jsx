@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = (event) => {
@@ -11,31 +11,34 @@ function Login() {
 
     // Validação simples
     if (!email || !password) {
-      alert('Por favor, preencha todos os campos.');
+      alert("Por favor, preencha todos os campos.");
       return;
     }
 
     // Verificação de email e senha de teste
-    const testEmail = 'teste@teste.com';
-    const testPassword = 'senha123';
+    const testEmail = "teste@teste.com";
+    const testPassword = "senha123";
 
     if (email === testEmail && password === testPassword) {
-      alert('Login bem-sucedido! (Teste de validação)');
-      navigate('/');
+      alert("Login bem-sucedido! (Teste de validação)");
+      navigate("/");
     } else {
-      alert('Falha no login. Verifique suas credenciais.');
+      alert("Falha no login. Verifique suas credenciais.");
     }
 
-    console.log('Iniciando login com email e senha');
-    console.log('Email:', email);
-    console.log('Password:', password);
+    console.log("Iniciando login com email e senha");
+    console.log("Email:", email);
+    console.log("Password:", password);
   };
 
   return (
     <div className="h-screen w-full font-sans bg-custom-gradient flex justify-center items-center">
       <div className="w-full max-w-lg">
         <div className="leading-loose">
-          <form onSubmit={handleLogin} className="max-w-sm m-auto p-10 bg-white bg-opacity-25 rounded shadow-xl">
+          <form
+            onSubmit={handleLogin}
+            className="max-w-sm m-auto p-10 bg-white bg-opacity-25 rounded shadow-xl"
+          >
             <p className="text-white text-center text-lg font-bold">LOGIN</p>
             <div className="mt-4">
               <label className="block text-sm text-white" htmlFor="email">
@@ -74,7 +77,7 @@ function Login() {
                 Entrar
               </button>
               <a
-                className="inline-block align-baseline font-bold text-sm text-white hover:text-red-400"
+                className="inline-block align-baseline font-bold text-sm text-white hover:text-blue-400"
                 href="#"
               >
                 Esqueceu a senha?
@@ -82,7 +85,7 @@ function Login() {
             </div>
             <div className="text-center mt-4">
               <a
-                className="inline-block align-baseline font-bold text-sm text-white hover:text-red-400"
+                className="inline-block align-baseline font-bold text-sm text-white hover:text-blue-400"
                 href="#"
               >
                 Criar uma conta

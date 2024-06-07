@@ -165,15 +165,16 @@
 .home .info h2 {
   font-size: 1.6rem;
   margin-bottom: 2rem;
-  color: black;
+  color: #000;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 4px;
   text-align: center;
 }
 .home .info .overview {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 4rem;
 }
@@ -250,7 +251,7 @@
 }
 .dashboard .header h1 {
   font-size: 2rem;
-  color: black;
+  color: #000;
   margin-bottom: 0.5rem;
 }
 .dashboard .header p {
@@ -262,8 +263,10 @@
 .dashboard .graficos,
 .dashboard .grafico-mapa {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: "";
   justify-content: space-around;
+  align-items: "";
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 .dashboard .graficos img,
@@ -330,8 +333,8 @@
 }
 .geral .container-intro {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .geral .container-intro .intro {
@@ -373,7 +376,7 @@
 .geral .impactos p {
   font-size: 1.1rem;
   line-height: 1.5;
-  color: black;
+  color: #000;
   text-align: justify;
 }
 .geral .impactos ul {
@@ -385,6 +388,7 @@
 .geral article {
   margin-top: 2rem;
   display: flex;
+  flex-direction: "";
   justify-content: space-around;
   align-items: flex-start;
   gap: 2rem;
@@ -424,7 +428,7 @@
 }
 .geral article .video .infograficos p {
   font-size: 1.1rem;
-  color: black;
+  color: #000;
 }
 .geral article .video .infograficos a {
   display: inline-block;
@@ -453,7 +457,7 @@
 .geral article .guia-acoes p {
   font-size: 1.1rem;
   line-height: 1.5;
-  color: black;
+  color: #000;
   text-align: justify;
 }
 .geral article .guia-acoes ul {
@@ -482,12 +486,6 @@
     max-width: 80%;
     margin-top: -2rem;
   }
-}
-
-.empresarial {
-  height: 1100px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
 }
 
 @tailwind base;
