@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/pages/_dashboard.scss";
 import Mapa from "../../Components/Mapa/Mapa";
+import WeatherInfo from "../../Components/whaterinfo/whather";
 
 function Dashboard() {
   return (
@@ -41,6 +42,9 @@ function Dashboard() {
       </div>
       <div className="maps">
         <Mapa title="Mapa Interativo: Poluição Global" />
+      </div>
+      <div>
+        <WeatherInfo/>
       </div>
     </div>
   );
