@@ -1,4 +1,4 @@
-Global Solution - Oceans20
+Global Solution - OceanGuard
 
 GRUPO:
 
@@ -8,4 +8,8 @@ Guilherme Santiago – RM552321
 
 Michel Lepine – RM553558
 
----
+--------------------------------------------
+
+Observações:
+* API Externa foi utilizada na seção do Dashboard (WeatherInfo).
+* APIs Internas (json) foram utilizadas no Dashboard (Mapa) e Empresarial.  
