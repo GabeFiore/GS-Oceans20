@@ -110,6 +110,23 @@
   }
 }
 
+.mapa h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  max-width: 55%;
+}
+@media (max-width: 480px) {
+  .mapa h2 {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
 .home {
   padding: 2rem;
   background: rgb(2, 0, 36);
@@ -223,9 +240,87 @@
 }
 
 .dashboard {
-  height: 1100px;
+  padding: 2rem;
   background: rgb(2, 0, 36);
   background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(9, 17, 121) 43%, rgb(0, 212, 255) 98%);
+}
+.dashboard .header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.dashboard .header h1 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.dashboard .header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.dashboard .graficos,
+.dashboard .grafico-mapa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.dashboard .graficos img,
+.dashboard .grafico-mapa img {
+  max-width: 400px;
+  margin: 5px;
+  border-radius: 8px;
+}
+.dashboard .grafico-mapa {
+  align-items: center;
+}
+.dashboard .grafico-mapa .linhas {
+  max-width: 700px;
+  height: 250px;
+  margin: 5px;
+  border-radius: 8px;
+}
+.dashboard .maps {
+  margin-top: 2rem;
+}
+.dashboard .maps .mapa {
+  margin: 0 auto;
+  max-width: 900px;
+}
+@media (max-width: 1300px) {
+  .dashboard .graficos img,
+  .dashboard .grafico-mapa img {
+    max-width: 350px;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard .grafico-mapa .linhas {
+    max-width: 400px;
+    height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 1rem;
+  }
+  .dashboard .header h1 {
+    font-size: 1rem;
+  }
+  .dashboard .header p {
+    font-size: 0.8rem;
+    max-width: 90%;
+  }
+  .dashboard .graficos img,
+  .dashboard .graficos .linhas,
+  .dashboard .grafico-mapa img,
+  .dashboard .grafico-mapa .linhas {
+    max-width: 90%;
+  }
+  .dashboard .maps .mapa {
+    max-width: 90%;
+  }
 }
 
 .geral {

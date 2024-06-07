@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "position": [37.7749, -122.4194],
+      "description": "São Francisco, EUA: Alta concentração de plásticos"
+    },
+    {
+      "id": 2,
+      "position": [34.0522, -118.2437],
+      "description": "Los Angeles, EUA: Contaminação química"
+    },
+    {
+      "id": 3,
+      "position": [40.7128, -74.006],
+      "description": "Nova York, EUA: Derramamento de óleo"
+    },
+    {
+      "id": 4,
+      "position": [51.5074, -0.1278],
+      "description": "Londres, Reino Unido: Resíduos industriais"
+    },
+    {
+      "id": 5,
+      "position": [20.5937, 78.9629],
+      "description": "Índia: Poluição por resíduos sólidos"
+    },
+    {
+      "id": 6,
+      "position": [-33.8688, 151.2093],
+      "description": "Sydney, Austrália: Microplásticos no oceano"
+    },
+    {
+      "id": 7,
+      "position": [-34.6037, -58.3816],
+      "description": "Buenos Aires, Argentina: Eutrofização das águas"
+    },
+    {
+      "id": 8,
+      "position": [35.6895, 139.6917],
+      "description": "Tóquio, Japão: Contaminação por metais pesados"
+    },
+    {
+      "id": 9,
+      "position": [-22.9068, -43.1729],
+      "description": "Rio de Janeiro, Brasil: Poluição por esgoto e resíduos sólidos"
+    },
+    {
+      "id": 10,
+      "position": [-23.5505, -46.6333],
+      "description": "São Paulo, Brasil: Alta concentração de poluentes químicos"
+    },
+    {
+      "id": 11,
+      "position": [-12.9714, -38.5014],
+      "description": "Salvador, Brasil: Contaminação por esgoto não tratado"
+    },
+    {
+      "id": 12,
+      "position": [-8.0476, -34.877],
+      "description": "Recife, Brasil: Poluição por microplásticos"
+    },
+    {
+      "id": 13,
+      "position": [-25.4284, -49.2733],
+      "description": "Curitiba, Brasil: Poluição por resíduos sólidos urbanos"
+    }
+  ]
+  

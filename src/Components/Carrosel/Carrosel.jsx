@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 const Carrosel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    // "../src/assets/corais.jpg",
-    // "../src/assets/tartaruga.jpg",
-    // "../src/assets/peixepalhaco.jpg",
+    "../src/assets/corais.jpg",
+    "../src/assets/tartaruga.jpg",
+    "../src/assets/peixepalhaco.jpg",
   ];
 
   const Previous = () => {

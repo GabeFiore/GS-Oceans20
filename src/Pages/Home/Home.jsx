@@ -48,8 +48,7 @@ function Home() {
                 </p>
                 <p>
                   Para descobrir como você pode fazer a diferença e ajudar na
-                  conservação dos oceanos:{" "}
-                  <Link to="geral#imagem">Clique Aqui!</Link>
+                  conservação dos oceanos: <Link to="geral">Clique Aqui!</Link>
                 </p>
               </div>
             </div>
