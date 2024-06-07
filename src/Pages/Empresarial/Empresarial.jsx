@@ -10,9 +10,9 @@ function Empresarial() {
   }, []);
 
   return (
-    <div className="bg-blue-300 min-h-screen">
-      <main className="pt-24 px-10 pb-4">
-        <div className="flex flex-wrap -mx-2">
+    <div className="bg-blue-300 min-h-screen dashboard">
+      <main className="pt-24  px-10 pb-4 ">
+        <div className="flex flex-wrap -mx-2 impactos">
           {empresas.map((empresa, index) => (
             <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
               <Card
@@ -48,7 +48,7 @@ const Card = ({
       {text} <br />
       <strong>{strongText}</strong>
     </p>
-    <p className="text-gray-700 mt-4">{description}</p>
+    <p className="text-gray-300 mt-4">{description}</p>
     <span className="bg-blue-500 text-xl text-white inline-block rounded-full mt-4 px-8 py-2">
       <strong>{points}</strong>
     </span>
